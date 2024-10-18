@@ -130,7 +130,7 @@ public class Server {
         if (file.exists()){
             boolean res = false;
             while (!res) {
-                res = file.renameTo(new File(dirPath + fileName + "(" + n + ")"));
+                res = file.renameTo(new File(name + "(" + n + ")"));
                 n++;
             }
         }
